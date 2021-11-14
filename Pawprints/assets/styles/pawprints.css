@@ -532,10 +532,15 @@ section .sectionBody .mainBody p:first-of-type {
   margin-top: 0;
 }
 
+section .sectionBody .mainBody .listHeader {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 section .sectionBody .mainBody .ulPawprints {
   padding-left: 3rem;
   list-style: initial;
-  list-style-image: url("/assets/images/purple_paw_VS.png");
+  list-style-image: url("../images/purple_paw_VS.png");
 }
 
 section .sectionBody .mainBody .ulPawprints li {

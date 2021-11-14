@@ -1,0 +1,146 @@
+:root {
+  --clr-pri: #845ec2;
+  --clr-sec: #fbeaff;
+  --clr-tri: #00c9a7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--clr-pri);
+  color: white;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.menu {
+  border-bottom: 1px solid var(--clr-sec);
+  margin: 1rem 0;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+}
+.menu .activePage {
+  font-weight: 700;
+  background-color: var(--clr-sec);
+  color: var(--clr-pri);
+  padding: 0.125em 0.5em;
+}
+
+.hamburgerMenu {
+  display: none;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 750px) {
+  .hamburgerMenu {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750.1px) {
+  .hamburgerMenu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.titles * {
+  width: max-content;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.titles h1 {
+  margin: 1em auto 0em auto;
+}
+
+.titles p {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 1.125em;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100%;
+  overflow: none;
+  min-width: 250px;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: var(--clr-sec);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card img {
+  width: 100%;
+  max-height: 185px;
+  /* overflow: hidden; */
+}
+
+section a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.card h2 {
+  width: max-content;
+  height: 2em;
+  margin: 1em auto 0 auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card ul {
+  padding-inline-start: 0;
+}
+
+.card li {
+  list-style: none;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card button {
+  margin: 0 0 0 auto;
+  color: var(--clr-sec);
+  padding: 0.25em 0.75em;
+  font-size: 1.125rem;
+  background-color: var(--clr-pri);
+  border-radius: 0.5rem;
+}

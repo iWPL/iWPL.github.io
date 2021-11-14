@@ -106,7 +106,6 @@ header .navrow {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  height: 95px;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-shadow: 0px 10px 10px -10px black;
@@ -124,7 +123,7 @@ header .navrow .logo {
 }
 
 header .navrow .logo img {
-  max-width: 250px;
+  max-width: 150px;
   margin: 0.5rem 1rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -330,14 +329,23 @@ header .banner .banner__body .banner__desc {
     display: grid;
     -ms-grid-columns: auto minmax(600px, 5fr);
         grid-template-columns: auto minmax(600px, 5fr);
+    height: 95px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .navrow .logo {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
+    overflow: hidden;
+    height: 155px;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   header .navrow .logo img {
     width: calc(150px + 5vw);
+    max-width: 250px;
   }
   header .navrow .nav-toggle-label {
     display: none;
@@ -353,6 +361,7 @@ header .banner .banner__body .banner__desc {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    height: 95px;
   }
   header .navrow nav .nav-list {
     -webkit-box-orient: horizontal;
@@ -365,6 +374,9 @@ header .banner .banner__body .banner__desc {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: auto;
@@ -902,6 +914,7 @@ section .subtext {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-decoration: none;
 }
 
 .tutor img,

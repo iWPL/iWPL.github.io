@@ -704,7 +704,7 @@ section .subtext {
 }
 
 .card ul {
-  list-style-image: url("./assets/images/paw_white_VVS.png");
+  list-style-image: url("../images/paw_white_VVS.png");
   line-height: 1.75em;
 }
 

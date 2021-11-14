@@ -1,0 +1,108 @@
+// ------------ HEADER ----------
+
+@media screen and (min-width: 1225px) {
+  header {
+    position: relative;
+
+    .navrow {
+      display: grid;
+      grid-template-columns: auto minmax(600px, 5fr);
+      height: 95px;
+      align-items: center;
+
+      .logo {
+        grid-column: 1 / 2;
+        overflow: hidden;
+        height: 165px;
+        // width: calc(150px + 5vw);
+        object-fit: cover;
+        transform: translateY(-35px);
+
+        img {
+          // width: calc(150px + 5vw);
+          max-width: 225px;
+        }
+      }
+
+      .nav-toggle-label {
+        display: none;
+      }
+
+      // --------- NAV ----------
+      nav {
+        all: unset;
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: flex-end;
+        height: 95px;
+
+        .nav-list {
+          flex-direction: row;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-top: auto;
+
+          .subnav-parent {
+            .twistyOpen {
+              display: inline;
+              transform: rotate(90deg);
+              transition: transform 0.5s;
+            }
+
+            .twistyClosed {
+              display: inline;
+              transform: rotate(0deg);
+              transition: transform 0.5s;
+            }
+
+            .subnav_closed {
+              display: none;
+            }
+
+            .subnav_open {
+              position: absolute;
+              display: block;
+              background-color: var(--clr-pri);
+              top: 100%;
+              padding: 0 10px 0 10px;
+              box-shadow: inset 0 20px 10px -20px black,
+                10px 10px 10px rgba(0, 0, 0, 0.5);
+            }
+          }
+
+          .nav-item {
+            a {
+              padding: 0.25rem 0.5rem;
+              border-radius: 0.25rem;
+            }
+
+            a:hover,
+            a:focus {
+              background-color: var(--clr-pri-dark);
+            }
+
+            &:first-child {
+              margin-top: 0rem;
+            }
+
+            .subnav-item {
+              margin: 0.5em 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ---------- TILES on home page ----------
+
+@media screen and (min-width: 1300px) {
+  .tiles {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    max-width: 1350px;
+  }
+}

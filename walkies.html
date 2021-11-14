@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/pawprints.css" />
+    <script src="menu.js" type="text/javascript" defer></script>
+    <title>Pawprints - Dog Training & Pet Care Services</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navrow">
+          <h1 class="logo">
+            <a href="home.html">
+              <img
+                src="./assets/images/logo-Pawprints-sm-3.png"
+                alt="Pawprints logo"
+              />
+            </a>
+          </h1>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <nav>
+            <ul class="nav-list">
+              <!-- <li class="./activePage"><a href="#">Home</a></li> -->
+              <li class="nav-item"><a href="./about.html">About Me</a></li>
+              <li id="trainingMenu" class="nav-item subnav-parent">
+                <a href="#"
+                  >Puppy & Dog Training
+                  <img
+                    src="./assets/images/twisty.png"
+                    alt="menuTwisty"
+                    id="trainingMenuTwisty"
+                    class="twistyClosed"
+                /></a>
+                <div id="trainingSubnav" class="subnav subnav_closed">
+                  <ul class="subnav-list">
+                    <li class="subnav-item">
+                      <a href="training-puppy-school.html">
+                        <div>
+                          <div class="subnav_title">Puppy Training</div>
+                          <div class="subnav_desc">
+                            For puppies under 20 weeks old
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="subnav-item">
+                      <a href="training-superpup.html"
+                        ><div>
+                          <div class="subnav_title">Super Pup Training</div>
+                          <div class="subnav_desc">
+                            For puppies who have completed Puppy Training
+                          </div>
+                        </div></a
+                      >
+                    </li>
+                    <li class="subnav-item">
+                      <a href="training-one2one.html">
+                        <div>
+                          <div class="subnav_title">One to One Training</div>
+                          <div class="subnav_desc">
+                            For older puppies and dogs
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a href="walkies.html">Dog Walking</a>
+              </li>
+              <li class="nav-item">
+                <a href="pet-care.html">Pet Care & Home&nbsp;Visits</a>
+              </li>
+              <li class="nav-item">
+                <a href="pet-photography.html">Pet Photography</a>
+              </li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <label for="nav-toggle" class="nav-toggle-label" id="hamburger"
+            ><span></span
+          ></label>
+        </div>
+        <div
+          class="banner"
+          style="background-image: url(./assets/images/Banner-IndiWalk.jpg)"
+        >
+          <div class="banner__body">
+            <h1 class="banner__title">Pet Care and Home Visits</h1>
+            <p class="banner__desc">Company and care for your pet</p>
+          </div>
+        </div>
+      </header>
+
+      <section title="walkies">
+        <div class="sectionTitle">
+          <h1>Walkies!</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="sectionBody">
+          <div class="sidebar">
+            <img
+              src="./assets//images/Pawprints Logo 1.png"
+              alt="Pawprints Logo"
+            />
+            <div class="factbox">
+              <div class="factbox-item">
+                <span class="number bigNumber">1-4</span>
+                <span class="unit">dogs</span>
+              </div>
+              <div class="factbox-item">
+                <span class="text">Local to Horley & Crawley</span>
+              </div>
+              <div class="factbox-item">
+                <span class="number">1</span> <span class="unit">hour</span>
+              </div>
+            </div>
+          </div>
+          <div class="mainBody">
+            <p>
+              Pawprints Dog Training & Pet Care Services will take your dog(s)
+              for a walk during the weekday. (Ad hoc weekend and bank holiday
+              walks possible by special request).
+            </p>
+            <p>
+              Solo or small compatible group (up to 4) dog walks are available.
+            </p>
+            <p>
+              Pawprints will meet you and your dog(s) for an initial FREE
+              consultation to learn their needs and establish compatibility.
+            </p>
+
+            <div class="callToAction">
+              <a href="contact.html"><button>Book Now</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section title="safe">
+        <div class="sectionTitle">
+          <h1>Safe</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="sectionBody">
+          <div class="sidebar">
+            <img
+              src="./assets//images/Originals/Indi Forest Bluebells.jpg"
+              alt="dog lying down"
+            />
+          </div>
+          <div class="mainBody">
+            <p>Walks are in safe locations</p>
+            <ul class="ulPawprints">
+              <li>Away from roads</li>
+              <li>Woodland</li>
+              <li>Grasslands</li>
+              <li>Parks</li>
+            </ul>
+            <p>Solo walks from home on pavements can be requested.</p>
+            <div class="callToAction">
+              <a href="contact.html"><button>Book Now</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section title="fun">
+        <div class="sectionTitle">
+          <h1>Fun</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="sectionBody">
+          <div class="sidebar">
+            <img
+              src="./assets/images/Originals/Indi Forest say please.jpg"
+              alt="dogs saying please"
+            />
+          </div>
+          <div class="mainBody">
+            <p>Enriching and mentally stimulating walks offer a balance of</p>
+            <ul class="ulPawprints">
+              <li>Running</li>
+              <li>Sniffing</li>
+              <li>Playing</li>
+              <li>Relaxed mooching</li>
+            </ul>
+            <div class="callToAction">
+              <a href="contact.html"><button>Book Now</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section title="routine">
+        <div class="sectionTitle">
+          <h1>Routine</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="sectionBody">
+          <div class="sidebar">
+            <img
+              src="./assets//images/Originals/Indi Forest Peekaboo.jpg"
+              alt="dogs playing peekaboo"
+            />
+          </div>
+          <div class="mainBody">
+            <p>
+              Your dog(s) will be safely transported between your home and the
+              days walk location.
+            </p>
+            <p>
+              After their Pawprints adventure they will return satisfied,
+              fullfilled and ready to relax but not before they’ve been given a
+              quick clean.
+            </p>
+            <div class="callToAction">
+              <a href="contact.html"><button>Book Now</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section title="duration">
+        <div class="sectionTitle">
+          <h1>Duration</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="sectionBody">
+          <div class="sidebar">
+            <!--img
+              src="./assets//images/Originals/Indi Forest Peekaboo.jpg"
+              alt="dogs playing peekaboo"
+            / -->
+          </div>
+          <div class="mainBody">
+            <p>
+              Walks will typically be at least 1 hour. Shorter trots or longer
+              adventures are also available.
+            </p>
+            <p>
+              For the health and safety of your dog(s) extremes of weather
+              (heat, rain, stroms, cold, etc.) may cut the walk short. In these
+              cases a Pet Sitting home visit can be arranged instead.
+            </p>
+            <div class="callToAction">
+              <a href="contact.html"><button>Book Now</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section title="The not so small print">
+        <div class="sectionTitle">
+          <h1>The not-so-small print</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="sectionBody">
+          <div class="sidebar">
+            <!--img
+              src="./assets//images/Originals/Indi Forest Peekaboo.jpg"
+              alt="dogs playing peekaboo"
+            / -->
+          </div>
+          <div class="mainBody">
+            <p>
+              All Pawprints dogs must be up to date with their vaccinations
+              (including Kennel cough) and their routine flea and worming
+              treatments.
+            </p>
+            <p>Proof will be required during the initial FREE consultation</p>
+            <p>
+              New dogs will be walked on a long training lead whilst a trusting
+              relationship is built. They will only be allowed off-lead once
+              recall is consistent
+            </p>
+            <div class="callToAction">
+              <a href="contact.html"><button>Book Now</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="associations">
+        <img src="./assets/images/Puppy School Logo S.png" alt="Puppy School" />
+        <img
+          src="./assets/images/PPN - Seal-of-approval-1.webp"
+          alt="Pet Professional Network Seal of Approval"
+        />
+        <img
+          src="./assets/images/PPNLOGO 3.webp"
+          alt="Pet Professional Network"
+        />
+      </section>
+
+      <footer>
+        <div class="footerRow">
+          <div class="contacts">
+            <div class="contact-item">
+              <img src="./assets/images/phone-classic.png" alt="phone icon" />
+              07882 223120
+            </div>
+            <div class="contact-item">
+              <a
+                href="mailto:Pawprints.Dog.Svcs@gmail.com"
+                class="underlineLink"
+              >
+                <img src="./assets/images/email-outline.png" alt="email icon" />
+                Pawprints.Dog.Svcs@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="socialMedia">
+            <a href=""
+              ><img
+                src="./assets/images/SM - Facebook Logo.webp"
+                alt="Facebook link"
+            /></a>
+            <a href=""
+              ><img
+                src="./assets/images/SM - Instagram logo.webp"
+                alt="Instagram link"
+            /></a>
+            <a href=""
+              ><img
+                src="./assets/images/SM - YouTube logo.webp"
+                alt="YouTube link"
+            /></a>
+          </div>
+        </div>
+        <div class="footerRow">
+          <div>
+            Design by <a href="yeay.co.uk" class="underlineLink">Yeay.co.uk</a>
+          </div>
+          <div>© 2021 Karen&nbsp;Hobbs</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

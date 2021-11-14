@@ -798,6 +798,11 @@ section {
 /* ------ SECTION - OTHER COURSES ------ */
 /* ------------------------------ */
 
+.courses {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .tutor,
 .course {
   display: flex;

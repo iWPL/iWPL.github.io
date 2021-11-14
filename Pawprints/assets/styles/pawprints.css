@@ -704,7 +704,7 @@ section .subtext {
 }
 
 .card ul {
-  list-style-image: url("/assets/images/paw_white_VVS.png");
+  list-style-image: url("./assets/images/paw_white_VVS.png");
   line-height: 1.75em;
 }
 
@@ -1316,8 +1316,6 @@ footer .footerRow:last-of-type div + div {
     grid-column: 1 / 2;
     overflow: hidden;
     height: 165px;
-    -o-object-fit: cover;
-       object-fit: cover;
     -webkit-transform: translateY(-35px);
             transform: translateY(-35px);
   }
